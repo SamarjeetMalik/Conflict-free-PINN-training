@@ -60,11 +60,4 @@ for input_i in dataset:
     g_config=ConFIG_update(grads) # calculate the conflict-free direction
     apply_gradient_vector(network) # set the condlict-free direction to the network
     optimizer.step()
-```
-
-More details and examples can be found in our [doc page](https://tum-pbs.github.io/ConFIG/).
-
-To reproduce the result in our paper, please check the [experiments](https://github.com/tum-pbs/ConFIG/tree/main/experiments) folder.
-
-## Additional Info
-This project is part of the physics-based deep learning topic in [**Physics-based Simulation group**](https://ge.in.tum.de/) at TUM.
+```.
