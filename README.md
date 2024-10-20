@@ -1,12 +1,12 @@
 
-<h4 align="center">Conflict free Physics Informed NN training methods</h4>
+## Implementation of Conflict Free Inverse Gradient(ConFIG) method
 
 
 
 ​This is a generic method for optimization problems involving **multiple loss terms** (e.g., Multi-task Learning, Continuous Learning, and Physics Informed Neural Networks). It prevents the optimization from getting stuck into a local minimum of a specific loss term due to the conflict between losses. On the contrary, it leads the optimization to the **shared minimum of all losses** by providing a **conflict-free update direction.**
 
 
-​The ConFIG(Conflict Free Inverse Gradient) method obtains the conflict-free direction by calculating the inverse of the loss-specific gradients matrix:
+​The ConFIG method obtains the conflict-free direction by calculating the inverse of the loss-specific gradients matrix:
 
 ```math
 \boldsymbol{g}_{ConFIG}=\left(\sum_{i=1}^{m} \boldsymbol{g}_{i}^\top\boldsymbol{g}_{u}\right)\boldsymbol{g}_u,
